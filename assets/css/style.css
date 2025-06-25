@@ -1,18 +1,33 @@
-/*--- 追加・修正分だけ抜粋 ---*/
+/* 追記・上書き分だけ抜粋 -----------------------------------*/
 
-/* バナーリンクだけは装飾を外す -----------------------------*/
-.banner-link{
-  display:block;          /* 横幅いっぱいをクリック可に */
-  background:none;        /* 共通 a{} の白背景を打ち消す */
-  padding:0;              /* 余白も不要 */
+/* ヘッダー：中央寄せは維持 */
+header{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;      /* h1 や p も中央揃え */
+  gap:1.25rem;            /* 要素間の余白をまとめて管理 */
 }
 
-/* 既存 .banner はそのままで OK ------------------------------*/
-.banner{
-  width:100%;
-  max-width:600px;
-  display:block;
-  margin:1.5rem auto;
-  border-radius:12px;
-  box-shadow:0 4px 12px rgba(0,0,0,.1);
+/* アバター画像 ------------------------------------------------*/
+.avatar{
+  width:140px;            /* ← 好みで 120〜160px に微調整 */
+  height:140px;
+  border-radius:50%;      /* 正円に切り抜く */
+  object-fit:cover;       /* はみ出しをトリミング */
+  border:4px solid #fff;  /* 白縁取り */
+  box-shadow:0 4px 16px rgba(0,0,0,.12); /* ふんわり影 */
+}
+
+/* 見出し＆サブコピー -----------------------------------------*/
+header h1{
+  font-size:1.4rem;
+  font-weight:700;
+  margin:0;               /* gap を使うので個別 margin はゼロ */
+}
+
+header p{
+  font-size:0.95rem;
+  color:#333;
+  margin:0;
 }
