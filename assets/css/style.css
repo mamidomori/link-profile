@@ -1,107 +1,16 @@
-/* すべての要素の余白をリセット */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  background-color: #FFF2EB;
-  color: #333;
-  text-align: center;
-  padding: 2rem;
-}
-
-/* ───────── カバー画像 ───────── */
-.cover {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  position: relative;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-}
-
-.cover img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* ───────── プロフィール画像（まるく）───────── */
+/* プロフィール画像 ===================== */
 .avatar {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   margin-bottom: 1rem;
 }
 
-/* ───────── ヘッダー文字 ───────── */
-header h1 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-header p {
-  font-size: 1rem;
-  color: #666;
-}
-
-/* ───────── リンク一覧 ───────── */
-ul {
-  list-style: none;
-  margin-top: 2rem;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 1rem;
-}
-
-a {
-  display: inline-block;
-  background-color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  font-weight: bold;
-  color: #333;
-  transition: transform 0.15s ease;
-}
-
-a:hover {
-  transform: translateY(-3px);
-}
-
-/* ───────── バナー画像リンク ───────── */
-.banner {
-  width: 100%;
-  max-width: 600px;
-  display: block;
-  margin: 20px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* ───────── カード形式のリンク ───────── */
-.card {
-  background: white;
-  border-radius: 12px;
-  padding: 1rem;
-  margin: 1.5rem auto;
-  max-width: 600px;
+/* ヘッダーを中央寄せ ===================== */
+header {
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.card a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
+  margin-top: 2rem;
 }
