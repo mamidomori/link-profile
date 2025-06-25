@@ -1,0 +1,74 @@
+/* すべての要素の余白をリセット */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:sans-serif;
+  background-color:#f5f5f5;
+  color:#333;
+  text-align:center;
+  padding:2rem;
+}
+
+/* ───────── カバー画像 ───────── */
+.cover{                         /* ← 追加 */
+  width:100%;
+  height:200px;                /* 高さは好みで調整 (例 180〜220px) */
+  overflow:hidden;
+  position:relative;
+  border-bottom-left-radius:12px;
+  border-bottom-right-radius:12px;
+}
+
+.cover img{                    /* ← 追加 */
+  width:100%;
+  height:100%;
+  object-fit:cover;            /* 横長トリミング */
+  display:block;
+}
+
+/* ───────── ヘッダー文字 ───────── */
+header h1{
+  font-size:2rem;
+  margin-bottom:0.5rem;
+}
+
+header p{
+  font-size:1rem;
+  color:#666;
+}
+
+/* ───────── リンク一覧 ───────── */
+ul{
+  list-style:none;
+  margin-top:2rem;
+  padding:0;
+}
+
+li{margin-bottom:1rem;}
+
+a{
+  display:inline-block;
+  background-color:#fff;
+  padding:1rem 2rem;
+  border-radius:12px;
+  box-shadow:0 2px 6px rgba(0,0,0,.1);
+  text-decoration:none;
+  font-weight:bold;
+  color:#333;
+  transition:transform .15s ease;
+}
+
+a:hover{transform:translateY(-3px);}
+
+/* ───────── プロフィール画像 ───────── */
+.avatar{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #fff;
+  box-shadow
