@@ -1,78 +1,18 @@
-/* すべての要素の余白をリセット */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/*--- 追加・修正分だけ抜粋 ---*/
+
+/* バナーリンクだけは装飾を外す -----------------------------*/
+.banner-link{
+  display:block;          /* 横幅いっぱいをクリック可に */
+  background:none;        /* 共通 a{} の白背景を打ち消す */
+  padding:0;              /* 余白も不要 */
 }
 
-body {
-  font-family: sans-serif;
-  background-color: #FFF2EB;
-  color: #333;
-  text-align: center;
-  padding: 2rem;
-}
-
-/* プロフィール画像 ===================== */
-.avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
-}
-
-/* バナー画像 ===================== */
-.banner {
-  width: 100%;
-  max-width: 600px;
-  display: block;
-  margin: 1.5rem auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.banner-link {
-  display: inline-block;
-  text-decoration: none;
-}
-
-/* ヘッダーテキスト ===================== */
-header h1 {
-  font-size: 1.5rem;
-  margin: 0.5rem 0 0.25rem;
-}
-
-header p {
-  font-size: 1rem;
-  color: #555;
-}
-
-/* リンク一覧 ===================== */
-ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 2rem;
-}
-
-li {
-  margin-bottom: 1rem;
-}
-
-a {
-  display: inline-block;
-  background-color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  font-weight: bold;
-  color: #333;
-  transition: transform 0.15s ease;
-}
-
-a:hover {
-  transform: translateY(-3px);
+/* 既存 .banner はそのままで OK ------------------------------*/
+.banner{
+  width:100%;
+  max-width:600px;
+  display:block;
+  margin:1.5rem auto;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,.1);
 }
