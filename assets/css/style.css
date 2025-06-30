@@ -56,6 +56,36 @@ header{
   font-weight: bold;
 }
 
+/* モッピー説明文のスタイル */
+.moppy-code {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
+
+/* キャンペーンテキストのスタイル */
+.campaign-text {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
+
+/* ANAポケット説明文のスタイル */
+.anapocket-text {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
+
 .number {
   width: 100%;
   max-width: 600px;
