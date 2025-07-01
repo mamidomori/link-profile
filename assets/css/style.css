@@ -46,6 +46,37 @@ header{
   margin: 1rem 0;
 }
 
+/* Instagramセクションのスタイル */
+.instagram-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.instagram-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.instagram-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.instagram-text {
+  font-size: 1.5rem;
+  color: #333;
+  padding-left: 1rem;
+}
+
+.instagram-name {
+  color: #0000ff;
+}
+
 /* HafHコードのスタイル */
 .haf-code {
   font-size: 1.2rem;
